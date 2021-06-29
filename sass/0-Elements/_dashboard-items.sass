@@ -1,0 +1,321 @@
+/* Dashboards */
+.dashboard-wrapper .row p
+  margin: 0
+
+.dashboard-item
+  word-wrap: break-word
+  background-color: #fff
+  background-clip: border-box
+  border: 1px solid rgba(0,0,0,.125)
+  border-radius: 0
+  height: 100%
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15)
+  padding: 10px
+  img
+    max-width: 100%
+    width: 66px
+    height: auto
+    display: none
+    margin: 10px auto
+    @media (min-width: $screen-md-min)
+      display: block
+  .dashboard-title
+    text-align: left
+    padding-left: 40px
+    padding-top: 15px
+    h2
+      font-weight: 500
+      font-size: 1.5em !important
+      letter-spacing: -0.5px
+      text-transform: uppercase
+      margin-top: 1em
+      @media (min-width: $screen-md-min)
+        margin-top: 0
+      &:hover
+        text-decoration: underline
+    .lead
+      font-size: 1rem
+      font-weight: 400
+      letter-spacing: 0.5px
+    @media (min-width: $screen-sm-min)
+      text-align: center
+      padding-left: 15px
+      @media (min-width: $screen-md-min)
+        padding-top: 0
+  .dash-content
+    margin: 0
+    padding-left: 40px
+    @media (min-width: $screen-sm-min)
+      margin: 0 auto
+      padding: 0 50px
+    @media (min-width: $screen-md-min)
+      padding: 0 100px
+    @media (min-width: $screen-lg-min)
+      padding: 0 19px
+    @media (min-width: $screen-xl-min)
+      padding: 0 50px
+    .link-list
+      li
+        margin-left: 1em
+        list-style-type: none
+        font-family: $heading-font
+        text-align: left
+        a
+          border-bottom: none
+          color: $ecu-purple
+          line-height: 2rem
+          transition: .5s
+          text-decoration: none
+          text-transform: capitalize
+          &::before
+            font-family: $font-awesome
+            content: "\f054"
+            color: $ecu-purple
+            margin-right: .5rem
+            &:hover
+              color: $light-purple
+              border-color: $light-purple
+              border-bottom: thin solid $light-purple
+      .uneven
+        padding-bottom: 0
+        @media (min-width: $screen-sm-min)
+          padding-bottom: 6em
+  &.with-image
+    border: none
+    padding: 1em 0 0.25em
+    @media screen and (min-width: $screen-lg-min)
+      padding: 0
+      img
+        margin: 14px auto
+  .want-more
+    text-align: center
+    color: $burnt-gold-aa
+    a
+      color: $burnt-gold-aa
+      text-transform: Capitalize
+      margin: 0 1rem
+      text-decoration: none
+      border-bottom: none
+      &:hover
+        border-color: $burnt-gold-aa
+        border-bottom: thin solid $burnt-gold-aa
+        span
+          display: block
+
+  &.dark-purple
+    .lead, h2
+      color: $dark-purple !important
+  &.ecu-hot-pink
+    .lead, h2
+      color: $ecu-hot-pink !important
+  &.AA-burnt-gold
+    .lead, h2
+      color: $burnt-gold-aa !important
+  &.dark-teal
+    .lead, h2
+      color: $dark-teal !important
+  &.grey
+    .lead, h2
+      color: $grey !important
+  &.ecu-purple
+    .lead, h2
+      color: $ecu-purple !important
+  &.AA-teal
+    .lead, h2
+      color: $teal !important
+
+
+.purple-card
+  background-color: $ecu-purple
+  color: $white
+  padding: 2rem
+  height: 100%
+  &.left
+    padding-bottom: 0.5em
+    @media screen and (min-width: $screen-sm-min)
+      padding-bottom: 1.25em
+    @media screen and (min-width: $screen-md-min)
+      padding-bottom: 2rem
+  &.right
+    padding-top: 0
+    @media screen and (min-width: $screen-md-min)
+      padding-top: 2rem
+  h2, h3
+    color: $white
+  .row
+    margin: 0
+    &.purple-card-divider
+      border-top: 1px solid $white
+      padding-top: 1.5em
+      @media screen and (min-width: $screen-md-min)
+        border-top: none
+        padding-top: 0
+    &.divider-border
+      border-bottom: 1px solid $white
+      margin-bottom: 1.75rem
+      padding-bottom: 0.5rem
+      width: 100%
+    #divider-extra-space
+      @media screen and (min-width: $screen-sm-min)
+        padding-bottom: 1.25rem
+      @media screen and (min-width: $screen-md-min)
+        padding-bottom: 0.5rem
+      @media screen and (min-width: $screen-lg-min)
+        padding-bottom: 1.25rem
+      @media screen and (min-width: $screen-xl-min)
+        padding-bottom: 0.5rem
+    &.image-blocks-container
+      @media screen and (min-width: $screen-sm-min)
+        margin-bottom: 1em
+      @media screen and (min-width: $screen-md-min)
+        margin-bottom: 0
+      @media screen and (min-width: $screen-lg-min)
+        margin-bottom: 1em
+      .image-blocks
+        @media screen and (min-width: $screen-sm-min)
+          background-size: cover
+          background-position: center center
+          min-height: 12em
+        @media screen and (min-width: $screen-md-min)
+          margin-bottom: 1em
+          min-height: 10em
+        @media screen and (min-width: $screen-lg-min)
+          margin-bottom: 0
+          min-height: 13em
+      #in-classroom-img
+        @media screen and (min-width: $screen-sm-min)
+          background-image: url('https://info.ecu.edu/wp-content/pv-uploads/sites/991/2019/11/4-25-2016-JoynerE_BooksJC-39-1.jpg')
+      #outside-classroom-img
+        @media screen and (min-width: $screen-sm-min)
+          background-image: url('https://info.ecu.edu/wp-content/pv-uploads/sites/991/2019/11/East_LLC_Garrett-0965.jpg')
+          background-position: right center
+      #pirate-necessities-img
+        @media screen and (min-width: $screen-sm-min)
+          background-image: url('https://info.ecu.edu/wp-content/pv-uploads/sites/991/2019/11/admissions_photos-5787.jpg')
+      #get-involved-img
+        @media screen and (min-width: $screen-sm-min)
+          background-image: url('https://info.ecu.edu/wp-content/pv-uploads/sites/991/2019/11/ECU_UNC-0555.jpg')
+      .text-blocks
+        padding: 0
+        @media screen and (min-width: $screen-sm-min)
+          padding: 0 15px
+        @media screen and (min-width: $screen-md-min)
+          padding: 0
+        @media screen and (min-width: $screen-lg-min)
+          padding: 0 15px
+  .link-list
+    padding-left: 0
+    @media screen and (min-width: $screen-sm-min)
+      -webkit-columns: 9.75em 3
+      -moz-columns: 9.75em 3
+      columns: 9.75em 3
+      -webkit-column-gap: 1em
+      -moz-column-gap: 1em
+      -ms-column-gap: 1em
+      column-gap: 1em
+    @media screen and (min-width: $screen-xl-min)
+      -webkit-column-gap: 0.25em
+      -moz-column-gap: 0.25em
+      -ms-column-gap: 0.25em
+      column-gap: 0.25em
+    li
+      font-size: 90%
+      padding-left: 18px
+      padding-right: 2px
+      &.uneven
+        @media screen and (min-width: $screen-xl-min)
+          padding-bottom: 5em
+      &.no-padding-sm
+        @media screen and (min-width: $screen-sm-min)
+          padding-bottom: 0
+        @media screen and (min-width: $screen-md-min)
+          padding-bottom: 0.75em
+      &.no-padding-lg
+        @media screen and (min-width: $screen-lg-min)
+          padding-bottom: 0
+        @media screen and (min-width: $screen-xl-min)
+          padding-bottom: 0.75em
+      &.no-padding-xl
+        @media screen and (min-width: $screen-xl-min)
+          padding-bottom: 0
+      &.extra-padding-xl
+        @media screen and (min-width: $screen-xl-min)
+          padding-bottom: 1em
+      a
+        color: $white !important
+        margin-left: -18px
+
+/* dashboard-item exceptions */
+section[aria-label="About Dashboard"]
+  .dash-content
+    .link-list
+      padding: 0
+      @media (min-width: $screen-sm-min)
+        -webkit-columns: 12.5em 2
+        -moz-columns: 12.5em 2
+        columns: 12.5em 2
+      @media (min-width: $screen-md-min)
+        -webkit-column-gap: 6em
+        -moz-column-gap: 6em
+        -ms-column-gap: 6em
+        column-gap: 6em
+      @media (min-width: $screen-lg-min)
+        -webkit-column-gap: 1.25em
+        -moz-column-gap: 1.25em
+        -ms-column-gap: 1.25em
+        column-gap: 1.25em
+      @media (min-width: $screen-xl-min)
+        -webkit-column-gap: 3em
+        -moz-column-gap: 3em
+        -ms-column-gap: 3em
+        column-gap: 3em
+
+section[aria-label="Current Students Dashboard"]
+  .dash-content
+    .link-list
+      padding-left: 0
+      @media (min-width: $screen-sm-min)
+        -webkit-columns: 10.5em 2
+        -moz-columns: 10.5em 2
+        columns: 10.5em 2
+        padding-bottom: 0.75em
+      @media (min-width: $screen-md-min)
+        -webkit-column-count: 3
+        -moz-column-count: 3
+        column-count: 3
+        -webkit-column-gap: 5em
+        -moz-column-gap: 5em
+        -ms-column-gap: 5em
+        column-gap: 5em
+        padding-bottom: 0
+      @media (min-width: $screen-lg-min)
+        -webkit-column-count: 2
+        -moz-column-count: 2
+        column-count: 2
+        -webkit-column-gap: 0
+        -moz-column-gap: 0
+        -ms-column-gap: 0
+        column-gap: 0
+      li
+        margin-left: 2em
+        &.no-padding-sm
+          @media screen and (min-width: $screen-sm-min)
+            padding-bottom: 0
+          @media screen and (min-width: $screen-md-min)
+            padding-bottom: 0.75em
+        &.no-padding-xl
+          @media screen and (min-width: $screen-xl-min)
+            padding-bottom: 0
+
+
+.polaroid-wrapper
+  .polaroid-text
+    display: flex
+    align-items: center
+    padding: 10px 0 5px
+  img, h2
+    margin: 0px
+  img
+    display: none
+    @media (min-width: 992px)
+      display: block

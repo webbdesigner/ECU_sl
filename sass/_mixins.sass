@@ -1,0 +1,30 @@
+=arts-item($color, $icon)
+	h2
+		a
+			color: $color !important
+
+	&::after
+		content: $icon
+		background-color: $color
+	p
+		color: $color !important
+
+=section($section, $color, $url)
+	#{$section}
+		background-image: linear-gradient(rgba( $color, .7 ), rgba( $color, .7 )), url($url)
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		transition: all .2s
+		&:hover
+			background-image: url($url)
+
+=image-blocks($url, $lg, $xl)
+	background-image: url($url)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	@media (min-width: $screen-lg-min)
+		height: $lg
+		@media (min-width: $screen-xl-min)
+			height: $xl
